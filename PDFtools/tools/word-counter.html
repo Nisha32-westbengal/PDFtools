@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter - Free Online Word Count Tool</title>
+    <meta name="description" content="Free online word counter tool. Count words, characters, sentences, and paragraphs instantly. Perfect for writers, students, and content creators.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header will be loaded dynamically -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="container py-4">
+        <div class="tool-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="mb-4">Word Counter</h1>
+                    <p class="lead mb-4">Count words, characters, sentences, and paragraphs instantly. Perfect for essays, articles, and social media posts.</p>
+                    
+                    <!-- Text Input Area -->
+                    <div class="form-group mb-4">
+                        <label for="text-input" class="form-label">Enter or paste your text below:</label>
+                        <textarea class="form-control" id="text-input" rows="10" placeholder="Start typing or paste your text here..."></textarea>
+                    </div>
+
+                    <!-- Statistics -->
+                    <div class="row stats-container mb-4">
+                        <div class="col-md-3 col-6 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="word-count">0</h5>
+                                    <p class="card-text">Words</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="char-count">0</h5>
+                                    <p class="card-text">Characters</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="sentence-count">0</h5>
+                                    <p class="card-text">Sentences</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="paragraph-count">0</h5>
+                                    <p class="card-text">Paragraphs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="d-flex gap-2 mb-4">
+                        <button class="btn btn-primary" id="copy-text">
+                            <i class="fas fa-copy"></i> Copy Text
+                        </button>
+                        <button class="btn btn-secondary" id="clear-text">
+                            <i class="fas fa-trash"></i> Clear Text
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-md-4">
+                    <!-- Ad Section -->
+                    <div class="ad-placeholder mb-4">
+                        <div class="bg-light p-3 text-center">
+                            Advertisement
+                        </div>
+                    </div>
+
+                    <!-- Related Tools -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">Related Tools</h5>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="/tools/character-counter.html" class="list-group-item list-group-item-action">
+                                Character Counter
+                            </a>
+                            <a href="/tools/case-converter.html" class="list-group-item list-group-item-action">
+                                Case Converter
+                            </a>
+                            <a href="/tools/text-to-speech.html" class="list-group-item list-group-item-action">
+                                Text to Speech
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/js/components.js"></script>
+    <script src="/js/word-counter.js"></script>
+</body>
+</html> 
